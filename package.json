@@ -1,6 +1,10 @@
 {
-  "name": "vike-bun-app",
+  "name": "bun-elysia-vike",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richard-unterberg/bun-elysia-vike.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "bunx vike dev",

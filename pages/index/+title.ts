@@ -1,3 +1,3 @@
 export function title() {
-  return "Welcome to Deno / Vike"
+  return "Welcome to Bun + Elysia + Vike"
 }

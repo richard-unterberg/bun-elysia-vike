@@ -24,7 +24,6 @@ app.get('*', async ({ request }) => {
     return new Response('Not Found', { status: 404 })
   }
 
-  // Bun supports web streams directly in Response
   const { statusCode, headers, body } = httpResponse
   return new Response(body, {
     status: statusCode,
@@ -35,4 +34,4 @@ app.get('*', async ({ request }) => {
 const port = Number(process.env.PORT || 3000)
 
 app.listen(port)
-console.log(`➡️  Elysia + Vike server running on http://localhost:${port}`)
+console.log(`➡️ Elysia Server + Vike running on http://localhost:${port}`)

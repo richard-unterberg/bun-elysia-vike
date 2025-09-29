@@ -5,4 +5,5 @@ export default {
   title: "bun + elysia + vike-react",
   clientRouting: true,
   extends: [vikeReact],
+  prerender: true
 } satisfies Config

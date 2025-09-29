@@ -1,8 +1,10 @@
 import type { Config } from "vike/types"
 import vikeReact from "vike-react/config"
+import vikeServer from 'vike-server/config'
 
 export default {
-  title: "bun meets vike",
+  title: "bun + elysia + vike-server",
   clientRouting: true,
-  extends: [vikeReact],
+  extends: [vikeServer, vikeReact],
+  server: 'server/index.ts'
 } satisfies Config

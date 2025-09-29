@@ -1,0 +1,23 @@
+{
+  "name": "vike-bun-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bunx vike dev",
+    "build": "bunx vike build",
+    "preview": "bunx vike preview",
+    "prod": "bunx vike build && bunx vike preview"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "vike": "^0.4.240",
+    "vike-react": "^0.6.6",
+    "vite": "^7.1.7"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.15",
+    "@vitejs/plugin-react": "^5.0.4",
+    "bun-types": "^1.2.23"
+  }
+}

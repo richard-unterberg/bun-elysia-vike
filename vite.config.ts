@@ -4,4 +4,4 @@ import vike from 'vike/plugin'
 
 export default defineConfig({
   plugins: [react(), vike()],
-}) 
+})

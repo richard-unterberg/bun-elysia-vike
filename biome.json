@@ -1,0 +1,90 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.2.4/schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git"
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "includes": [
+      "**",
+      "!**/dist",
+      "!**/node_modules",
+      "!**/package.json"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentWidth": 2,
+    "indentStyle": "space",
+    "lineWidth": 110,
+    "lineEnding": "lf",
+    "includes": [
+      "**",
+      "!**/dist",
+      "!**/node_modules",
+      "!**/package.json"
+    ]
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "off"
+      }
+    }
+  },
+  "linter": {
+    "rules": {
+      "performance": {
+        "noImgElement": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "warn",
+        "noUnknownAtRules": "off"
+      },
+      "complexity": {
+        "useArrowFunction": "warn"
+      },
+      "nursery": {},
+      "style": {
+        "noParameterAssign": "error",
+        "useAsConstAssertion": "error",
+        "useDefaultParameterLast": "error",
+        "useEnumInitializers": "error",
+        "useSelfClosingElements": "error",
+        "useSingleVarDeclarator": "error",
+        "noUnusedTemplateLiteral": "error",
+        "useNumberNamespace": "error",
+        "noInferrableTypes": "error",
+        "noUselessElse": "error"
+      },
+    
+      "correctness": {
+        "useUniqueElementIds": "warn"
+      },
+      "a11y": {
+        "useValidAutocomplete": "error"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "warn",
+        "noBlankTarget": "warn"
+      }
+    },
+    "includes": [
+      "**",
+      "!**/dist",
+      "!**/node_modules",
+      "!**/package.json"
+    ]
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double",
+      "enabled": true,
+      "attributePosition": "auto",
+      "semicolons": "asNeeded",
+      "indentWidth": 2,
+      "indentStyle": "space"
+    }
+  }
+}

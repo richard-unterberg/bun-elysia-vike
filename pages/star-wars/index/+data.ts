@@ -1,8 +1,7 @@
-// https://vike.dev/data
 export { data }
 export type Data = Awaited<ReturnType<typeof data>>
 
-import { filterMoviesData, getStarWarsMovies, getTitle } from './getStarWarsMovies.ts'
+import { filterMoviesData, getStarWarsMovies, getTitle } from './getStarWarsMovies'
 
 async function data() {
   const movies = await getStarWarsMovies()

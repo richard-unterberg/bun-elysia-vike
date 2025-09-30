@@ -1,7 +1,7 @@
 export default Page;
 
 import { useData } from "vike-react/useData";
-import type { Data } from "./+data.ts";
+import type { Data } from "./+data";
 
 function Page() {
 	const { movies } = useData<Data>();

@@ -11,7 +11,8 @@
     "build": "bunx vike build && bun run scripts/preCompress.ts",
     "preview": "bunx vike preview",
     "prod": "bun run build && NODE_ENV=production bun server/index.ts",
-    "start": "NODE_ENV=production bun server/index.ts"
+    "start": "NODE_ENV=production bun server/index.ts",
+    "prepare": "bunx lefthook install"
   },
   "dependencies": {
     "@elysiajs/static": "^1.4.0",

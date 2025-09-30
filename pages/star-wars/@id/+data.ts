@@ -4,8 +4,8 @@ export type Data = Awaited<ReturnType<typeof data>>
 import type { PageContextClient, PageContextServer } from 'vike/types'
 
 import { render } from 'vike/abort'
-import type { MovieDetails } from "../types.js";
-import { filterMovieData } from "../filterMovieData.js";
+import type { MovieDetails } from "../types";
+import { filterMovieData } from "../filterMovieData";
 
 async function data(pageContext: PageContextServer | PageContextClient) {
   const dataUrl = `https://star-wars.brillout.com/api/films/${pageContext.routeParams.id}.json`
